@@ -32,6 +32,11 @@ p{
   font-weight: 400;
   color: var(--common-color);
 }
+p.price{
+  font-size: 28px;
+  font-weight: 900;
+  color:rgba(250, 190, 76, 1);
+}
 .btn-style{
   background-color: rgba(164, 188, 70, 1);
   border-radius: 5px;
@@ -68,3 +73,17 @@ p{
   color: var(--common-color);
 }
 
+/* card  */
+.card{
+  border-radius: 10px;
+}
+.card img{
+  background-color: 
+  rgba(241, 241, 241, 1);
+  border-radius: 10px;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(54, 57, 88, 1);
+}
