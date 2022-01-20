@@ -1,11 +1,13 @@
 /* import google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Neonderthaw&family=Roboto:wght@500;700;900&display=swap');
 
 /* font-family  */
 
 /*
 font-family: 'Bebas Neue', cursive;
 font-family: 'Roboto', sans-serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Dancing Script', cursive;
 /*
 
 
@@ -44,7 +46,13 @@ p.price{
   font-weight: 500;
   font-size: 16px;
   padding: 8px 15px;
-  border: none;
+  border: 1px solid rgba(164, 188, 70, 1);
+  transition: 0.2s ease-in;
+}
+.btn-style:hover{
+  border: 1px solid rgba(164, 188, 70, 1);
+  background-color: transparent;
+  color: #3E3E3E;
 }
 /* navbar  */
 .navbar::after{
@@ -60,8 +68,12 @@ p.price{
   font-size: 16px;
   font-weight: 500;
   color: var(--common-color);
+  padding-left: 15px !important;
 }
-
+.navbar-nav a:hover{
+  transform: scale(1.2);
+  transition: transform .2s ease-in-out;
+}
 /* hero section  */
 .hero h1.hero-title{
   font-size: 80px;
@@ -76,6 +88,11 @@ p.price{
 /* card  */
 .card{
   border-radius: 10px;
+  overflow: hidden;
+  transition: transform .2s ease-in;
+}
+.card:hover{
+  transform: scale(1.02);
 }
 .card img{
   background-color: 
@@ -86,4 +103,45 @@ p.price{
   font-size: 24px;
   font-weight: 700;
   color: rgba(54, 57, 88, 1);
+}
+
+/* Exchange section  */
+.product_info:hover{
+  box-shadow: 30px 30px 100px rgba(2, 2, 2, 0.164) !important;
+}
+
+/* footer  */
+h4.copyright{
+  font-size: 18px;
+  color: #999191;
+}
+h3.section-title::first-letter{
+  color: red;
+  font-family: 'Neonderthaw', cursive;
+  font-weight: 700;
+  font-size: 35px;
+}
+.copyright-name::first-line{
+  color: #ffffff93;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+
+
+
+
+/* Media Query  */
+
+@media screen and (max-width:992px) {
+  .navbar::after{
+    display: none;
+  }
+  .hero h1.hero-title{
+    font-size: 60px;
+  }
+  .navbar-nav{
+    background-color: rgba(49, 44, 44, 0.13);
+  }
 }
