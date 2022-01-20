@@ -111,6 +111,9 @@ p.price{
 }
 
 /* footer  */
+footer{
+  position: relative;
+}
 h4.copyright{
   font-size: 18px;
   color: #999191;
@@ -126,6 +129,25 @@ h3.section-title::first-letter{
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 30px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  background-color:rgba(0, 0, 0, 0.315);
+  border-radius: 50%;
+  padding: 5px;
+  position:absolute;
+  bottom: 40%;
+  right: 5%;
+}
+.icon .fa-arrow-up{
+  color: red;
+  padding: 10px;
+  font-size: 25px;
+}
+.icon:hover .fa-arrow-up{
+  transform: translateY(-10px);
+  transition: transform .2s ;
 }
 
 
